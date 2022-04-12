@@ -63,7 +63,7 @@ GLOBAL_USERS_DICTIONARY = {}
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "KenalSayaaa")
 
 keyboard = [[
-            InlineKeyboardButton('My Father', url=f"https://t.me/{OWNER_USERNAME}"),
+            InlineKeyboardButton('My Developer', url=f"https://t.me/{OWNER_USERNAME}"),
             InlineKeyboardButton('Source 👻', url="https://github.com/PunyaChael/MyTelegramOrg")
         ]]
 
