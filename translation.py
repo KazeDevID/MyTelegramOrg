@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """Hi!
+    START_TEXT = """
 Hai Saya Bot My.telegram.org Sederhana.
 
 Membantu Anda Untuk Mendapatkan API ID & API HASH Masukkan Nomor Telepon Telegram Anda Dengan Kode Negara.
@@ -11,7 +11,7 @@ Channel Support: @ItsMeKaze91
 
 
 Klik /start Untuk Memulai Bot nya"""
-    AFTER_RECVD_CODE_TEXT = """I see!
+    AFTER_RECVD_CODE_TEXT = """
 Sekarang silakan kirim kode Telegram yang Anda terima dari Telegram!
 
 kode ini hanya digunakan untuk tujuan mendapatkan ID APP dari my.telegram.org
