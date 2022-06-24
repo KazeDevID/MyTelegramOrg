@@ -12,9 +12,9 @@ class Config:
     CHUNK_SIZE = 10280
     # MyTelegram.org
     # configurtion required while creating new application
-    APP_TITLE = os.environ.get("APP_TITLE", "scarpbot")
-    APP_SHORT_NAME = os.environ.get("APP_SHORT_NAME", "scarpbot")
-    APP_URL = os.environ.get("APP_URL", "https://telegram.dog/KenalSayaaa")
+    APP_TITLE = os.environ.get("APP_TITLE", "ScrapKazeBot")
+    APP_SHORT_NAME = os.environ.get("APP_SHORT_NAME", "ScrapKazeBot")
+    APP_URL = os.environ.get("APP_URL", "https://telegram.dog/ScrapKazeBot")
     # these platform informations were obtained
     # on 27.01.2020 21:15:50 IST
     APP_PLATFORM = [
