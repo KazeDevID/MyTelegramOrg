@@ -5,8 +5,6 @@ services:
     environment:
       WEBHOOK: $WEBHOOK
       STRING_SESSION: $STRING_SESSION
-      API_ID: $API_ID
-      API_HASH: $API_HASH
       TG_BOT_TOKEN: $TG_BOT_TOKEN
       OWNER_USERNAME: $OWNER_USERNAME
-      OWNER_ID: $OWNER_ID
+      URL: $URL
