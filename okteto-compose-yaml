@@ -3,6 +3,6 @@ services:
   worker:
     build: .
     environment:
-      - WEBHOOK-${WEBHOOK}
-      - TG_BOT_TOKEN-${TG_BOT_TOKEN}
-      - OWNER_USERNAME-${OWNER_USERNAME}
+      WEBHOOK: $WEBHOOK
+      TG_BOT_TOKEN: $TG_BOT_TOKEN
+      OWNER_USERNAME: $OWNER_USERNAME
