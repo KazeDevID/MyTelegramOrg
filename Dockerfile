@@ -1,19 +1,11 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs18
-
-RUN apt-get update -y && apt-get upgrade -y \
-
-    && apt-get install python3
-
-    && apt-get install -y --no-install-recommends ffmpeg \
-
-    && apt-get clean \
-
-    && rm -rf /var/lib/apt/lists/*
-
-COPY . /app/
+FROM python3.9
 
 WORKDIR /app/
 
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+COPY requirements.txt /app/
+
+RUN pip3 install -r requirements.txt
+
+COPY . /app/
 
 CMD python3 bot.py
