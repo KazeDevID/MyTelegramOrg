@@ -6,4 +6,3 @@ services:
       WEBHOOK: $WEBHOOK
       TG_BOT_TOKEN: $TG_BOT_TOKEN
       OWNER_USERNAME: $OWNER_USERNAME
-      URL: $URL
