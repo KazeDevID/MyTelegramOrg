@@ -3,6 +3,7 @@ services:
   worker:
     build: .
     environment:
+      WEBHOOK: $WEBHOOK
       STRING_SESSION: $STRING_SESSION
       API_ID: $API_ID
       API_HASH: $API_HASH
