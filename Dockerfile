@@ -1,8 +1,19 @@
-FROM python:3.9.5-buster
-WORKDIR /app
-RUN chmod 777 /app
-RUN pip3 install -U pip
-COPY requirements.txt .
-RUN pip3 install --no-cache-dir -U -r requirements.txt
-COPY . .
-CMD ["python3", "-m", "helper_funcs"]
+FROM nikolaik/python-nodejs:python3.9-nodejs18
+
+RUN apt-get update -y && apt-get upgrade -y \
+
+    && apt-get install python3
+
+    && apt-get install -y --no-install-recommends ffmpeg \
+
+    && apt-get clean \
+
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . /app/
+
+WORKDIR /app/
+
+RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+
+CMD python3 bot.py
