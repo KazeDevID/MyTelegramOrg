@@ -1,5 +1,5 @@
 {
-  "name": "MyTelegramOrg",
+  "name": "GetIDAndHASH_bot",
   "description": "get your APP ID and API HASH inside Telegram",
   "logo": "https://i.ibb.co/gFDcpXv/IMG-20220413-063833-066.jpg",
   "keywords": [
@@ -10,7 +10,7 @@
     "3"
   ],
   "repository": "https://github.com/PunyaChael/MyTelegramOrg",
-  "success_url": "https://telegram.dog/ScrapKazeBot",
+  "success_url": "https://t.me/GetIDAndHASH_bot",
   "website": "https://github.com/PunyaChael/MyTelegramOrg",
   "env": {
     "WEBHOOK": {
@@ -19,7 +19,7 @@
     },
     "OWNER_USERNAME": {
       "description": "enter your Username without @",
-      "value": "KenalSayaaa"
+      "value": ""
     },
     "TG_BOT_TOKEN": {
       "description": "Your bot token, as a string."
@@ -46,7 +46,7 @@
     },
     "FTEXT": {
       "description": "the footer text that will be seen in the bot message, after the final edit",
-      "value": "By : @KenalSayaaa",
+      "value": "By : @GetIDAndHASH_bot",
       "required": false
     },
     "START_TEXT": {
