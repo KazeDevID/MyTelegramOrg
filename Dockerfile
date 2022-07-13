@@ -1,14 +1,15 @@
-FROM python3.9
+FROM debian:latest
 
-WORKDIR /app/
-
-COPY requirements.txt /app/
-
-RUN apt-get update -y && apt-get upgrade -y 
-RUN apt-get install python3 python3-pip -y
-RUN pip install git python
-RUN pip3 install -r requirements.txt
-
-COPY . /app/
-
-CMD python3 bot.py
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip ffmpeg -y
+RUN pip3 install -U pip
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs && \
+    npm i -g npm
+COPY requirements.txt /requirements.txt
+RUN cd /
+RUN pip3 install -U -r requirements.txt
+RUN mkdir /MyTelegramORG
+WORKDIR /MyTelegramORG
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
