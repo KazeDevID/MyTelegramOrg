@@ -1,25 +1,20 @@
 class Translation(object):
     START_TEXT = """
-Hai Saya Bot My.telegram.org Sederhana.
+Hello and welcome to API ID & API HASH Bot,
 
-Membantu Anda Untuk Mendapatkan API ID & API HASH Masukkan Nomor Telepon Telegram Anda Dengan Kode Negara.
+I Help You To Get your API ID & API HASH 
+Enter Your Telegram Phone Number With Country Code.
 
-Join To 
-Group Update: @NothingSupportBot
-Group Anime: @AniLoversIndo
-Channel Support: @ItsMeKaze91
-
-
-Klik /start Untuk Memulai Bot nya"""
+Click /start to start the bot"""
     AFTER_RECVD_CODE_TEXT = """
-Sekarang silakan kirim kode Telegram yang Anda terima dari Telegram!
+Now please send the Telegram code you received from Telegram!
 
-kode ini hanya digunakan untuk tujuan mendapatkan ID APP dari my.telegram.org
-\njika Anda tidak mempercayai pengembang bot ini, harap kunjungan web terpercaya telegram my.telegram.org
+This code is only used for the purpose of getting the APP ID from my.telegram.org
+\nIf you don't trust the developer of this bot, please visit the trusted Telegram website my.telegram.org
 
-Klik /start Untuk Memulai Ulang Botnya"""
-    BEFORE_SUCC_LOGIN = "Kode Diterima. Scarpping Web Page..."
-    ERRED_PAGE = "Gagal Mendapatkan Api Id\nSilakan Hubungi Kami Di @KenalSayaaa"
-    CANCELLED_MESG = "Bye! Silahkan /start kembali untuk mengulang Bot"
-    IN_VALID_CODE_PVDED = "Kode OTP yang anda Masukan SALAH!! Harap Masukan Kode OTP dengan benar!!!"
-    IN_VALID_PHNO_PVDED = "No HP yang anda masukan SALAH, Silahkan Masukkan Nomor Telepon Telegram Anda Dengan Format Kode Negara.\nContoh: +628xxxxxxx"
+Click /start to restart the bot"""
+    BEFORE_SUCC_LOGIN = "Scarpping Web Page..."
+    ERRED_PAGE = "Failed to Get Api Id\nPlease try again."
+    CANCELLED_MESG = "Bye! Please enter /start to repeat Bot"
+    IN_VALID_CODE_PVDED = "The OTP code you entered is WRONG!! Please enter the OTP code correctly!!!"
+    IN_VALID_PHNO_PVDED = "The cellphone number you entered is WRONG, please enter your Telegram telephone number in country code format.\nExample: +628xxxxxxx"
