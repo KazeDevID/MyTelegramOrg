@@ -4,7 +4,7 @@ from translation import Translation
 
 class Config:
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6622759851:AAEcCn5khbAh9QKENIy4QvmQTZgDibTeCp4")
     # required for running on Heroku
     URL = os.environ.get("URL", "")
     PORT = int(os.environ.get("PORT", 5000))
@@ -12,9 +12,9 @@ class Config:
     CHUNK_SIZE = 10280
     # MyTelegram.org
     # configurtion required while creating new application
-    APP_TITLE = os.environ.get("APP_TITLE", "ScrapKazeBot")
-    APP_SHORT_NAME = os.environ.get("APP_SHORT_NAME", "ScrapKazeBot")
-    APP_URL = os.environ.get("APP_URL", "https://telegram.dog/ScrapKazeBot")
+    APP_TITLE = os.environ.get("APP_TITLE", "ScrapR0Bot")
+    APP_SHORT_NAME = os.environ.get("APP_SHORT_NAME", "ScrapR0Bot")
+    APP_URL = os.environ.get("APP_URL", "https://telegram.dog/ScrapR0Bot")
     # these platform informations were obtained
     # on 27.01.2020 21:15:50 IST
     APP_PLATFORM = [
@@ -32,7 +32,7 @@ class Config:
     # https://github.com/KazeDevID/MyTelegramOrg
     APP_DESCRIPTION = os.environ.get(
         "APP_DESCRIPTION",
-        "created using https://telegram.dog/ItsMeKaze91"
+        "created using https://telegram.dog/Kenalsayaaa"
     )
     #
     FOOTER_TEXT = os.environ.get("FTEXT", "Thanks For Using me")
